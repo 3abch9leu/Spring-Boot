@@ -25,4 +25,7 @@ public class Maintenance {
 
     @Column(length = 1000)
     private String description;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "vehicule_id", nullable = false)
+    private Vehicule vehicule;
 }

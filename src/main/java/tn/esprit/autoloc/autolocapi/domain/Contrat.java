@@ -7,6 +7,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
+import java.util.ArrayList;
+
+
+
 
 @Entity
 @Table(name = "contrat")
@@ -27,4 +32,11 @@ public class Contrat {
 
     @Column(nullable = false)
     private Boolean valide;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "reservation_id", unique = true, nullable = false)
+    private Reservation reservation;
+
+    @OneToMany(mappedBy = "contrat", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Paiement> paiements = new ArrayList<>();
 }
