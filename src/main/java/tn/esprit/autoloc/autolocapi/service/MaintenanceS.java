@@ -21,6 +21,4 @@ public class MaintenanceS implements IMaintenanceS {
     public Maintenance retrieveMaintenance(Long idMaintenance) { return maintenanceR.findById(idMaintenance).orElse(null); }
     @Override
     public void removeMaintenance(Long idMaintenance) { maintenanceR.deleteById(idMaintenance); }
-    @Override
-    public List<Maintenance> addMaintenances(List<Maintenance> maintenances) { return maintenanceR.saveAll(maintenances); }
 }

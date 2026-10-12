@@ -9,5 +9,4 @@ public interface IClientS {
     Client updateClient(Client c);
     Client retrieveClient(Long idClient);
     void removeClient(Long idClient);
-    List<Client> addClients (List<Client> clients);
 }

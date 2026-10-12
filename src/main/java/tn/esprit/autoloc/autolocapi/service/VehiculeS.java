@@ -21,6 +21,4 @@ public class VehiculeS implements IVehiculeS {
     public Vehicule retrieveVehicule(Long idVehicule) { return vehiculeR.findById(idVehicule).orElse(null); }
     @Override
     public void removeVehicule(Long idVehicule) { vehiculeR.deleteById(idVehicule); }
-    @Override
-    public List<Vehicule> addVehicules(List<Vehicule> vehicules) { return vehiculeR.saveAll(vehicules); }
 }

@@ -21,6 +21,4 @@ public class ContratS implements IContratS {
     public Contrat retrieveContrat(Long idContrat) { return contratR.findById(idContrat).orElse(null); }
     @Override
     public void removeContrat(Long idContrat) { contratR.deleteById(idContrat); }
-    @Override
-    public List<Contrat> addContrats(List<Contrat> contrats) { return contratR.saveAll(contrats); }
 }

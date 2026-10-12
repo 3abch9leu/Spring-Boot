@@ -9,5 +9,4 @@ public interface IMaintenanceS {
     Maintenance updateMaintenance(Maintenance m);
     Maintenance retrieveMaintenance(Long idMaintenance);
     void removeMaintenance(Long idMaintenance);
-    List<Maintenance> addMaintenances(List<Maintenance> maintenances);
 }

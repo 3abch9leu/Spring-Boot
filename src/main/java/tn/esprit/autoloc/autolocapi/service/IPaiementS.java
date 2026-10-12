@@ -9,5 +9,4 @@ public interface IPaiementS {
     Paiement updatePaiement(Paiement p);
     Paiement retrievePaiement(Long idPaiement);
     void removePaiement(Long idPaiement);
-    List<Paiement> addPaiements(List<Paiement> paiements);
 }

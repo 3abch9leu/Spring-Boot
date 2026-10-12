@@ -9,5 +9,4 @@ public interface IEmployeS {
     Employe updateEmploye(Employe e);
     Employe retrieveEmploye(Long idEmploye);
     void removeEmploye(Long idEmploye);
-    List<Employe> addEmployes(List<Employe> employes);
 }

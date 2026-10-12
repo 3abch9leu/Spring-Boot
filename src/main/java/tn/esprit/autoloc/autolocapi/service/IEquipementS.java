@@ -9,5 +9,4 @@ public interface IEquipementS {
     Equipement updateEquipement(Equipement e);
     Equipement retrieveEquipement(Long idEquipement);
     void removeEquipement(Long idEquipement);
-    List<Equipement> addEquipements(List<Equipement> equipements);
 }

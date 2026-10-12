@@ -9,5 +9,4 @@ public interface IContratS {
     Contrat updateContrat(Contrat c);
     Contrat retrieveContrat(Long idContrat);
     void removeContrat(Long idContrat);
-    List<Contrat> addContrats(List<Contrat> contrats);
 }

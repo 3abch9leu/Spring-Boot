@@ -9,5 +9,4 @@ public interface IVehiculeS {
     Vehicule updateVehicule(Vehicule v);
     Vehicule retrieveVehicule(Long idVehicule);
     void removeVehicule(Long idVehicule);
-    List<Vehicule> addVehicules(List<Vehicule> vehicules);
 }

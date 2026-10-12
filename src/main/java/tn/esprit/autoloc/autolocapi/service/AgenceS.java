@@ -37,9 +37,4 @@ public class AgenceS implements IAgenceS {
     public void removeAgence(Long idAgence) {
         agenceR.deleteById(idAgence);
     }
-
-    @Override
-    public List<Agence> addAgences(List<Agence> agences) {
-        return agenceR.saveAll(agences);
-    }
 }

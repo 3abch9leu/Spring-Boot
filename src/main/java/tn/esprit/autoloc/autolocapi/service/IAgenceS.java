@@ -10,5 +10,4 @@ public interface IAgenceS {
     Agence updateAgence(Agence a);
     Agence retrieveAgence(Long idAgence);
     void removeAgence(Long idAgence);
-    List<Agence> addAgences(List<Agence> agences);
 }

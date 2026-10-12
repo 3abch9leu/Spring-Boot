@@ -21,6 +21,4 @@ public class ReservationS implements IReservationS {
     public Reservation retrieveReservation(Long idReservation) { return reservationR.findById(idReservation).orElse(null); }
     @Override
     public void removeReservation(Long idReservation) { reservationR.deleteById(idReservation); }
-    @Override
-    public List<Reservation> addReservations(List<Reservation> reservations) { return reservationR.saveAll(reservations); }
 }

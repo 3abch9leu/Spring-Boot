@@ -38,9 +38,4 @@ public class ClienS implements IClientS {
     public void removeClient(Long idClient) {
         clientR.deleteById(idClient);
     }
-
-    @Override
-    public List<Client> addClients(List<Client> clients) {
-        return clientR.saveAll(clients);
-    }
 }

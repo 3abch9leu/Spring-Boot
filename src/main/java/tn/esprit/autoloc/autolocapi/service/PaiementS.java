@@ -21,6 +21,4 @@ public class PaiementS implements IPaiementS {
     public Paiement retrievePaiement(Long idPaiement) { return paiementR.findById(idPaiement).orElse(null); }
     @Override
     public void removePaiement(Long idPaiement) { paiementR.deleteById(idPaiement); }
-    @Override
-    public List<Paiement> addPaiements(List<Paiement> paiements) { return paiementR.saveAll(paiements); }
 }

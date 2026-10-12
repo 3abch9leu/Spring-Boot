@@ -21,6 +21,4 @@ public class EquipementS implements IEquipementS {
     public Equipement retrieveEquipement(Long idEquipement) { return equipementR.findById(idEquipement).orElse(null); }
     @Override
     public void removeEquipement(Long idEquipement) { equipementR.deleteById(idEquipement); }
-    @Override
-    public List<Equipement> addEquipements(List<Equipement> equipements) { return equipementR.saveAll(equipements); }
 }

@@ -21,6 +21,4 @@ public class EmployeS implements IEmployeS {
     public Employe retrieveEmploye(Long idEmploye) { return employeR.findById(idEmploye).orElse(null); }
     @Override
     public void removeEmploye(Long idEmploye) { employeR.deleteById(idEmploye); }
-    @Override
-    public List<Employe> addEmployes(List<Employe> employes) { return employeR.saveAll(employes); }
 }
